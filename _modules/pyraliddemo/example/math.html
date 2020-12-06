@@ -237,6 +237,38 @@
 
 <span class="sd">    """</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">input_data</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">input_data</span><span class="p">)))</span></div>
+
+
+<div class="viewcode-block" id="add_two_floats"><a class="viewcode-back" href="../../../pyraliddemo.example.math.html#pyraliddemo.example.math.add_two_floats">[docs]</a><span class="k">def</span> <span class="nf">add_two_floats</span><span class="p">(</span><span class="n">first_value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">second_value</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">"""Add Two Floats.</span>
+
+<span class="sd">    Add two float values.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    first_value : float</span>
+<span class="sd">        First float value</span>
+<span class="sd">    second_value : float</span>
+<span class="sd">        Second float value</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Result of addition</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    TypeError</span>
+<span class="sd">        For invalid input types.</span>
+
+<span class="sd">    """</span>
+    <span class="n">fv_is_float</span> <span class="o">=</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">first_value</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+    <span class="n">sv_is_float</span> <span class="o">=</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">second_value</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">((</span><span class="n">fv_is_float</span><span class="p">,</span> <span class="n">sv_is_float</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">'Inputs must be floats.'</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">first_value</span> <span class="o">+</span> <span class="n">second_value</span></div>
 </code></pre>
 </main>
 <footer class="mt-20 px-5 md:ml-fluid mb-4 flex-shrink-0 text-sm text-gray-700" role="contentinfo">© Copyright 2020, Samuel Farrens Last updated: 06 Dec, 2020. Made with <a href="https://www.sphinx-doc.org">Sphinx 3.3.1</a></footer>

@@ -217,6 +217,25 @@
             <span class="n">math</span><span class="o">.</span><span class="n">mad</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_mad_data</span><span class="p">),</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_mad_res</span><span class="p">,</span>
             <span class="n">err_msg</span><span class="o">=</span><span class="s1">'Incorrect median absolute deviation'</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="MathTestCase.test_add_two_float"><a class="viewcode-back" href="../../../pyraliddemo.tests.test_example.html#pyraliddemo.tests.test_example.MathTestCase.test_add_two_float">[docs]</a>    <span class="k">def</span> <span class="nf">test_add_two_float</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">"""Test ``pyraliddemo.example.math.add_two_floats`` function.</span>
+
+<span class="sd">        See Also</span>
+<span class="sd">        --------</span>
+<span class="sd">        pyraliddemo.example.math.test_add_two_floats : Implementation of the</span>
+<span class="sd">            ``test_add_two_floats`` function.</span>
+
+<span class="sd">        """</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_equal</span><span class="p">(</span>
+            <span class="n">math</span><span class="o">.</span><span class="n">add_two_floats</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_first</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_second</span><span class="p">)),</span>
+            <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_add_res</span><span class="p">),</span>
+            <span class="n">err_msg</span><span class="o">=</span><span class="s1">'Incorrect addition result.'</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_raises</span><span class="p">(</span>
+            <span class="ne">TypeError</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">add_two_floats</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_first</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_second</span><span class="p">),</span>
         <span class="p">)</span></div></div>
 </code></pre>
 </main>
