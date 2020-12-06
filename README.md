@@ -14,5 +14,4 @@
 > Year: 2020  
 ---
 
-This is an demo package called
-`pyraliddemo` generated from the [Pyralid Template](generated from sfarrens/pyralid-template).
+This is an demo package called `pyraliddemo` generated from the [Pyralid Template](https://github.com/sfarrens/pyralid-template).
