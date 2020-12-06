@@ -1,0 +1,7 @@
+pyraliddemo.example.math
+------------------------
+
+.. automodule:: pyraliddemo.example.math
+   :members:
+   :undoc-members:
+   :show-inheritance:

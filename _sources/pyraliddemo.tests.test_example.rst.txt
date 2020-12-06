@@ -1,0 +1,7 @@
+pyraliddemo.tests.test\_example
+-------------------------------
+
+.. automodule:: pyraliddemo.tests.test_example
+   :members:
+   :undoc-members:
+   :show-inheritance:

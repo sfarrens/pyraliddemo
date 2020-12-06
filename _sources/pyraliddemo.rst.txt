@@ -1,0 +1,17 @@
+pyraliddemo
+===========
+
+
+.. automodule:: pyraliddemo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pyraliddemo.example
+   pyraliddemo.tests
