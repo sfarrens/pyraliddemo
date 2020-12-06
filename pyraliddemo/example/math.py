@@ -164,7 +164,7 @@ def mad(input_data: np.ndarray) -> float:
     return np.median(np.abs(input_data - np.median(input_data)))
 
 
-def add_float(first_value: float, second_value: float) -> float:
+def add_two_floats(first_value: float, second_value: float) -> float:
     """Add Two Floats.
 
     Add two float values.
