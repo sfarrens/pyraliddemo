@@ -14,7 +14,7 @@
    :titlesonly:
    :caption: API Documentation
 
-   configure_package_name
+   pyraliddemo
    scripts
    z_ref
 

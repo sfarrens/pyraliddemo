@@ -10,14 +10,14 @@ minor = 0
 patch = 0
 
 # Set the package details
-name = 'configure_package_name'
+name = 'pyraliddemo'
 version = '.'.join(str(value) for value in (major, minor, patch))
-author = 'configure_author'
-email = 'configure_email'
-gh_user = 'configure_ghuser'
+author = 'Samuel Farrens'
+email = 'samuel.farrens@cea.fr'
+gh_user = 'sfarrens'
 url = 'https://github.com/{0}/{1}'.format(gh_user, name)
-year = 'configure_year'
-description = 'configure_description'
+year = '2020'
+description = 'Demo package made using the Pyralid Template'
 
 # Set package summary
 summary = ('{} Author: {}, Email: {}, Year: {}, Description: {}'
