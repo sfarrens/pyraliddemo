@@ -143,3 +143,22 @@ class MathTestCase(TestCase):
             self._mad_res,
             err_msg='Incorrect median absolute deviation',
         )
+
+    def test_add_two_float(self):
+        """Test ``pyraliddemo.example.math.add_two_floats`` function.
+
+        See Also
+        --------
+        pyraliddemo.example.math.test_add_two_floats : Implementation of the
+            ``test_add_two_floats`` function.
+
+        """
+        npt.assert_equal(
+            math.add_two_floats(float(self._first), float(self._second)),
+            float(self._add_res),
+            err_msg='Incorrect addition result.',
+        )
+
+        npt.assert_raises(
+            TypeError, math.add_two_floats, self._first, float(self._second),
+        )
