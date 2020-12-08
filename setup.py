@@ -35,10 +35,6 @@ classifiers = (
     [os_str.format(ops) for ops in os_platforms_supported]
 )
 
-# Set package summary
-summary = ('{} Author: {}, Email: {}, Year: {}, Description: {}'
-           ''.format(name, author, email, year, description))
-
 # Source package description from README.md
 this_directory = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
@@ -73,7 +69,7 @@ setup(
     version=version,
     license=license,
     url=url,
-    description=summary,
+    description=description,
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
