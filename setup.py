@@ -7,7 +7,7 @@ import os
 # Set the package release version
 major = 0
 minor = 0
-patch = 0
+patch = 1
 
 # Set the package details
 name = 'pyraliddemo'
@@ -63,6 +63,7 @@ setup(
     packages=find_packages(),
     scripts=find_scripts(),
     install_requires=install_requires,
+    python_requires='>=3.6',
     setup_requires=['pytest-runner'],
     tests_require=tests_require,
     extras_require={'develop': tests_require + docs_require}
