@@ -7,7 +7,7 @@ import os
 # Set the package release version
 major = 0
 minor = 0
-patch = 1
+patch = 2
 
 # Set the package details
 name = 'pyraliddemo'
@@ -18,6 +18,22 @@ gh_user = 'sfarrens'
 url = 'https://github.com/{0}/{1}'.format(gh_user, name)
 year = '2020'
 description = 'Demo package made using the Pyralid Template'
+license = 'MIT'
+
+# Set the package classifiers
+python_versions_supported = ['3.6', '3.7', '3.8', '3.9']
+os_platforms_supported = ['Unix', 'MacOS']
+
+lc_str = 'License :: OSI Approved :: {0} License'
+ln_str = 'Programming Language :: Python'
+py_str = 'Programming Language :: Python :: {0}'
+os_str = 'Operating System :: {0}'
+
+classifiers = (
+    [lc_str.format(license)] + [ln_str] +
+    [py_str.format(ver) for ver in python_versions_supported] +
+    [os_str.format(ops) for ops in os_platforms_supported]
+)
 
 # Set package summary
 summary = ('{} Author: {}, Email: {}, Year: {}, Description: {}'
@@ -55,7 +71,7 @@ setup(
     author=author,
     author_email=email,
     version=version,
-    license='MIT',
+    license=license,
     url=url,
     description=summary,
     long_description=long_description,
@@ -66,5 +82,6 @@ setup(
     python_requires='>=3.6',
     setup_requires=['pytest-runner'],
     tests_require=tests_require,
-    extras_require={'develop': tests_require + docs_require}
+    extras_require={'develop': tests_require + docs_require},
+    classifiers=classifiers,
 )
