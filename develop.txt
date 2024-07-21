@@ -4,5 +4,5 @@ pytest==6.2.2
 pytest-cov==2.11.1
 pytest-pep8==1.0.6
 pytest-emoji==0.2.0
-pytest-flake8==1.0.7
+pytest-flake8==1.2.1
 wemake-python-styleguide==0.15.2
